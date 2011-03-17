@@ -107,7 +107,7 @@ var hashgrid = function(set) {
 	});
 
 	// Break on zero line height
-	if (lineHeight <= 0) return true;
+	if (lineHeight <= 0) return;
 
 	// Add the remaining grid lines
 	var i, numGridLines = Math.floor(pageHeight / lineHeight);
@@ -324,7 +324,6 @@ var hashgrid = function(set) {
 			ss.removeRule(ss.rules.length - 1);
 		} catch(e){}
 	}
-
 };
 
 
