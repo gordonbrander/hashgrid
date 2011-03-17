@@ -26,11 +26,10 @@
  *     cookiePrefix: 'mygrid'   // prefix for the cookie name
  * });
  */
-if (typeof jQuery == "undefined") {
+if (typeof $ == "undefined") {
 	alert("Hashgrid: jQuery not loaded. Make sure it's linked to your pages.");
 }
-
-
+ 
 /**
  * hashgrid overlay
  */
@@ -326,12 +325,11 @@ var hashgrid = function(set) {
 	}
 };
 
-
 /**
  * You can call hashgrid from your own code, but it's loaded here as
  * an example for your convenience.
  */
-jQuery(function () {
+$(function ($) {
 
 	var grid = new hashgrid({
 		numberOfGrids: 2
