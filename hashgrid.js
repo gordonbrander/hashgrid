@@ -332,7 +332,7 @@ var hashgrid = function(set) {
  * You can call hashgrid from your own code, but it's loaded here as
  * an example for your convenience.
  */
-$(document).ready(function() {
+jQuery(function () {
 
 	var grid = new hashgrid({
 		numberOfGrids: 2
